@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import UsersArray from "./components/users-array/UsersArray";
 
 function App() {
   return (
     <div>
-
+      <UsersArray/>
     </div>
   );
 }
