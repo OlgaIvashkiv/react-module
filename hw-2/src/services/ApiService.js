@@ -1,7 +1,7 @@
 export class ApiService {
     _usersUrl = 'https://jsonplaceholder.typicode.com/users';
     _postsUrl = 'https://jsonplaceholder.typicode.com/posts';
-    _commentsUrl = 'https://jsonplaceholder.typicode.com/coments';
+    _commentsUrl = 'https://jsonplaceholder.typicode.com/comments';
 
 
     async getAllUsers(){
