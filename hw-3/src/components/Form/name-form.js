@@ -21,7 +21,7 @@ class NameForm extends Component {
                                 this.state.filteredUsers.map(
                                 user => {
                                     return (
-                                        <div className="card">
+                                        <div className="card" key={user.id}>
                                             <div className="card-body">
                                                 <h4 className="card-title">{user.id} {user.name}</h4>
                                                 <h6 className="card-subtitle mb-2 text-muted">{user.username}</h6>
