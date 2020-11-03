@@ -53,12 +53,12 @@ class IdForm extends Component {
     }
 
     onChooseId=(event)=> {
-        const users = this.state.users
+        const users = this.state.users;
         if (event.target.value<=10){
         const result = users.filter(user => {
             return user.id === +event.target.value
         });
-        result.map(value => {
+            result.map(value => {
                 this.setState({id: value.id, name: value.name, username: value.username,
                     email: value.email, isChosen: true})
             }
