@@ -7,10 +7,6 @@ class NameForm extends Component {
     state={
         users: [],
         filteredUsers: [],
-        id: '',
-        name: '',
-        username: '',
-        email: '',
         isChosen: false
     }
     render() {
