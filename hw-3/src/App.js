@@ -6,8 +6,12 @@ import NameForm from "./components/Form/name-form";
 function App() {
   return (
     <div>
-      <IdForm/>
-      <NameForm/>
+        <div className="myForm">
+            <IdForm/>
+            <hr/>
+            <NameForm/>
+        </div>
+
     </div>
   );
 }

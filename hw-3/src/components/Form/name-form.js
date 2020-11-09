@@ -13,6 +13,7 @@ class NameForm extends Component {
         return (
             <div>
                 <form onSubmit={this.onFormSubmit}>
+                    <p>Please type in user name:</p>
                     <input type="text" onChange={this.onNameInput}/>
                 </form>
                 <div>
