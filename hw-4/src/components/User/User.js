@@ -1,4 +1,7 @@
 import React, {Component} from 'react';
+import {withRouter} from "react-router";
+
+
 
 class User extends Component {
 
@@ -13,11 +16,18 @@ class User extends Component {
                     <p className="card-text">
                         {email}
                     </p>
-                    <button className="btn btn-info">Open posts</button>
+                    <button className="btn btn-info" onClick={()=>{this.openPosts(id)}}>Open posts</button>
                 </div>
             </div>
         );
     }
+
+    openPosts(id) {
+        console.log(id)
+        this.props.history.push({
+            pathname: `/users/${id}`
+        })
+    }
 }
 
-export default User;
+export default withRouter(User);

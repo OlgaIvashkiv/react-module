@@ -9,6 +9,14 @@ export class ApiService {
         return fetch(`${this._url}/posts`)
     }
 
+    getAllPostsWithId(id){
+        return fetch(`${this._url}/posts?userId=${id}`)
+    }
+
+    getAllCommentsWithId(id){
+        return fetch(`${this._url}/comments?postId=${id}`)
+    }
+
     getAllComments(){
         return fetch(`${this._url}/comments`)
     }
