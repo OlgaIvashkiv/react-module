@@ -22,7 +22,7 @@ class User extends Component {
         );
     }
 
-    openPosts(id) {
+    openPosts=(id)=> {
         console.log(id)
         this.props.history.push({
             pathname: `/users/${id}`
