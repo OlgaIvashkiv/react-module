@@ -15,7 +15,7 @@ const initialState = {
 const reducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_TO_CART: {
-            const itemInCart = state.find(el => el.id === action.payload.id)
+            const itemInCart = state.cart.find(el => el.id === action.payload.id)
             const updatedCart = [...state.cart];
             if (!itemInCart) updatedCart.push(action.payload)
 
